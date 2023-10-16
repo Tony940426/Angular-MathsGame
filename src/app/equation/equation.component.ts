@@ -20,9 +20,7 @@ export class EquationComponent {
       }
       return {addition: true}
     }
-  ]
-  
-  )
+  ]);
 
   randomNumber(){
     return Math.floor(Math.random()*10)
