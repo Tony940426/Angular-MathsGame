@@ -17,10 +17,12 @@ export class EquationComponent {
     return Math.floor(Math.random()*10)
   }
 
-  constructor(){
-    if(this.mathForm == null){
-      return;
-    } 
-      console.log(this.mathForm.get('a').value, this.mathForm.get('b').value)
+  constructor(){}
+
+  get a(){
+    return this.mathForm.get('a').value
+  }
+  get b(){
+    return this.mathForm.get('b').value
   }
 };
