@@ -21,6 +21,8 @@ export class EquationComponent {
       return {addition: true}
     }
   ]);
+  //We applied the customer validator to the whole form group. We wanted the validator
+  //to look at all the from controls in the group.
 
   randomNumber(){
     return Math.floor(Math.random()*10)
