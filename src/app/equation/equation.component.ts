@@ -12,7 +12,8 @@ export class EquationComponent {
     a: new FormControl(this.randomNumber()),
     b: new FormControl(this.randomNumber()),
     answer: new FormControl('')
-  }, [MathValidators.addition]);
+  }, [MathValidators.addition('answer', 'a', 'b')]
+  );
   //We applied the customer validator to the whole form group. We wanted the validator
   //to look at all the from controls in the group.
 
